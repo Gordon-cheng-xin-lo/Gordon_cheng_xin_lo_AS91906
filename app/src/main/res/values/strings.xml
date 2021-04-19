@@ -1,0 +1,47 @@
+<resources>
+    <!--Mainactivity text-->
+    <string name="app_name">Gordon_cheng_xin_lo_AS91906</string>
+    <string name="Timetable_button_name">Timetable</string>
+    <string name="Content_share_button_name">Resource</string>
+    <string name="Revision_button_name">Revision</string>
+    <string name="Kamar_button_name">Kamar</string>
+
+    <!--Heading text-->
+    <string name="Timetable_heading">Time Table</string>
+    <string name="Resource_heading">Resource</string>
+    <string name="Revision_heading">Revision</string>
+    <string name="Kamar_heading">Kamar</string>
+
+
+    <!--Basic layout text-->
+    <string name="Account_button_name">Account</string>
+    <string name="Home_button_name">Home</string>
+    <string name="Return_button_name">Return</string>
+
+    <!--Timetable Button text-->
+    <string name="SchoolTimetable_button_name">School Timetable</string>
+    <string name="Calendar_button_name">Calendar</string>
+    <string name="Homework_button_name">Homework</string>
+
+    <!--Timetable text-->
+    <string name="Timetable_setting_button_name">Table Setting</string>
+    <string name="School_timetable_heading_label">School Timetable</string>>
+
+    <!--Timetable setting text-->
+    <string name="Confirm_setting_button_name">Confirm And Save</string>
+    <string name="Statement_name">Timetable Setting</string>
+    <string name="Return_statement_name">Back to Table</string>
+
+    <!--Homework text-->
+    <string name="Homework_heading_label">Homework</string>>
+
+    <!---->
+    <string name="title_activity_account_setting">AccountSetting</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    </resources>
