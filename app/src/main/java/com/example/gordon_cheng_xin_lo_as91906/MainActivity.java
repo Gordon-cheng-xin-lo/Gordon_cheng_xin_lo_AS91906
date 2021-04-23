@@ -27,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
         KamarButton = findViewById(R.id.Kamar_button);
         AccountButton = findViewById(R.id.Account_button);
 
+
+
     }
 
 

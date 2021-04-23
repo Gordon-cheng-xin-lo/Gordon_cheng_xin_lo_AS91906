@@ -30,9 +30,10 @@ public class Timetable extends AppCompatActivity {
     }
 
     public void Scooltimetable (View aView) {
-        Intent Schooltimetable_function = new Intent(this,Timetable.class);
+        Intent Schooltimetable_function = new Intent(this,SchoolTimetable.class);
         startActivity(Schooltimetable_function);
     }
+
 
     public void Homework (View aView) {
         Intent Homework_function = new Intent (this,Homework.class);

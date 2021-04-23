@@ -34,6 +34,10 @@
 
     <!--Homework text-->
     <string name="Homework_heading_label">Homework</string>>
+    <string name="HM_Name">Name</string>>
+    <string name="HM_Infrom">Information</string>>
+    <string name="HM_Class">Class</string>>
+    <string name="HM_Date">Hand in Date</string>>
 
     <!---->
     <string name="title_activity_account_setting">AccountSetting</string>
