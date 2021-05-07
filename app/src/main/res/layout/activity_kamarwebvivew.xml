@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/tets9"
-    tools:context=".Homework">
+    tools:context=".kamarwebvivew">
 
     <Button
-        android:id="@+id/school_timetable_return_button4"
+        android:id="@+id/kamar_webview_return_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
@@ -22,12 +22,12 @@
         android:textSize="24sp"
         app:backgroundTint="#A143778F"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/school_timetable_account_button4"
-        app:layout_constraintStart_toEndOf="@+id/school_timetable_home_button4"
+        app:layout_constraintEnd_toStartOf="@+id/kamar_webview_account_button"
+        app:layout_constraintStart_toEndOf="@+id/kamar_webview_home_button"
         tools:text="@string/Return_button_name" />
 
     <Button
-        android:id="@+id/school_timetable_account_button4"
+        android:id="@+id/kamar_webview_account_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
@@ -41,10 +41,10 @@
         app:backgroundTint="#A143778F"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/school_timetable_return_button4" />
+        app:layout_constraintStart_toEndOf="@+id/kamar_webview_return_button" />
 
     <Button
-        android:id="@+id/school_timetable_home_button4"
+        android:id="@+id/kamar_webview_home_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
@@ -58,27 +58,11 @@
         android:textSize="24sp"
         app:backgroundTint="#A143778F"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/school_timetable_return_button4"
+        app:layout_constraintEnd_toStartOf="@+id/kamar_webview_return_button"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/Heading_homework"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="133dp"
-        android:layout_marginLeft="133dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginEnd="134dp"
-        android:layout_marginRight="134dp"
-        android:text="@string/Homework_heading_label"
-        android:textColor="@color/white"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/Homewok_Recycleview"
+    <WebView
+        android:id="@+id/KamarWebView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="150dp"
@@ -88,21 +72,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button"
+    <TextView
+        android:id="@+id/Heading_kamar_webview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="132dp"
-        android:layout_marginLeft="132dp"
-        android:layout_marginEnd="132dp"
-        android:layout_marginRight="132dp"
-        android:layout_marginBottom="8dp"
-        android:onClick="New_Homework"
-        android:text="@string/HM_New"
-        android:textSize="24sp"
-        app:backgroundTint="#A171C0E4"
-        app:layout_constraintBottom_toTopOf="@+id/school_timetable_return_button4"
+        android:layout_marginStart="103dp"
+        android:layout_marginLeft="103dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginRight="104dp"
+        android:text="@string/Kmaar_WebView"
+        android:textColor="@color/white"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Homewok_Recycleview" />
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

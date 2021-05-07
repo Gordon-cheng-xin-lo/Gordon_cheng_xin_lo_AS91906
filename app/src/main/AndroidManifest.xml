@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.gordon_cheng_xin_lo_as91906">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Gordon_cheng_xin_lo_AS91906">
-        <activity android:name=".Homework"></activity>
+        <activity android:name=".NewSchoolTimeTable"></activity>
+        <activity android:name=".EditHomeWork" />
+        <activity android:name=".NewHomework" />
+        <activity android:name=".kamarwebvivew" />
+        <activity android:name=".Homework" />
         <activity android:name=".SchoolTimetable" />
         <activity android:name=".Resource" />
         <activity android:name=".Revision" />

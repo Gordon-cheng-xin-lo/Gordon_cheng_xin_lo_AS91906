@@ -23,11 +23,12 @@
     <string name="Calendar_button_name">Calendar</string>
     <string name="Homework_button_name">Homework</string>
 
-    <!--Timetable text-->
+    <!--School Timetable text-->
     <string name="Timetable_setting_button_name">Table Setting</string>
-    <string name="School_timetable_heading_label">School Timetable</string>>
+    <string name="School_timetable_heading_label">School Timetable</string>
+    <string name="New_School_timetable">New Schedule</string>>
 
-    <!--Timetable setting text-->
+    <!--School Timetable setting text-->
     <string name="Confirm_setting_button_name">Confirm And Save</string>
     <string name="Statement_name">Timetable Setting</string>
     <string name="Return_statement_name">Back to Table</string>
@@ -37,7 +38,19 @@
     <string name="HM_Name">Name</string>>
     <string name="HM_Infrom">Information</string>>
     <string name="HM_Class">Class</string>>
-    <string name="HM_Date">Hand in Date</string>>
+    <string name="HM_Date">Date</string>>
+    <string name="HM_New">New Homework</string>>
+    <string name="HM_Addict">Edit</string>>
+    <string name="HM_Delete">Delete</string>>
+
+    <!--Homework edit Text-->
+    <string name="HM_edit_label">Editing</string>>
+    <string name="HM_edit_save">Save change</string>>
+    <string name="HM_edit_unsave">Exit</string>>
+
+    <!--Kamar text-->
+    <string name="Kamar_Web">Website</string>>
+    <string name="Kmaar_WebView">Kamar Website</string>>
 
     <!---->
     <string name="title_activity_account_setting">AccountSetting</string>
@@ -48,4 +61,4 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    </resources>
+</resources>

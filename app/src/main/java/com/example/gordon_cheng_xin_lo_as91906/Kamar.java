@@ -20,6 +20,11 @@ public class Kamar extends AppCompatActivity {
         Accountbutton = findViewById(R.id.Kamar_account_button);
     }
 
+    public void WebViewKamar (View aView) {
+        Intent Web_Kamar = new Intent(this,kamarwebvivew.class);
+        startActivity(Web_Kamar);
+    }
+
     public void Return (View aView) {
         Intent Homepage_function = new Intent(this,MainActivity.class);
         startActivity(Homepage_function);

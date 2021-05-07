@@ -1,10 +1,10 @@
 package com.example.gordon_cheng_xin_lo_as91906;
 
 public class HomeworkList {
-    private String Data;
-    private String ClassName;
-    private String Name;
-    private String Information;
+    public String Data;
+    public String ClassName;
+    public String Name;
+    public String Information;
 
     public HomeworkList(String Data,String ClassName, String Name, String Information){
         this.Data = Data;
