@@ -7,11 +7,14 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="@string/App"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Gordon_cheng_xin_lo_AS91906">
-        <activity android:name=".NewSchoolTimeTable"></activity>
+        <activity android:name=".ResourceAPI_Database"></activity>
+        <activity android:name=".ResourceWebsite" />
+        <activity android:name=".EditSchoolTimetable" />
+        <activity android:name=".NewSchoolTimeTable" />
         <activity android:name=".EditHomeWork" />
         <activity android:name=".NewHomework" />
         <activity android:name=".kamarwebvivew" />

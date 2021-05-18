@@ -1,12 +1,16 @@
 package com.example.gordon_cheng_xin_lo_as91906;
 
+import android.annotation.SuppressLint;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -19,6 +23,12 @@ public class HomeworkRecyclerView extends RecyclerView.Adapter<HomeworkRecyclerV
 {
     HomeworkList[] data;
     Context context;
+
+    public static final String Class_MESSAGE = "Text Entry App";
+    public static final String Name_MESSAGE = "Text Entry App";
+    public static final String Date_MESSAGE = "Text Entry App";
+    public static final String Inform_MESSAGE = "Text Entry App";
+
 
     public HomeworkRecyclerView(Context context, HomeworkList[] data) {
         this.data = data;
@@ -44,17 +54,45 @@ public class HomeworkRecyclerView extends RecyclerView.Adapter<HomeworkRecyclerV
         holder.DataView_ClassName.setText(String.valueOf(data[position]));
         holder.DataView_Name.setText(String.valueOf(data[position]));
         holder.DataView_Information.setText(String.valueOf(data[position]));
-        holder.DataView_Date_Label.setText("Data");
+        holder.DataView_Date_Label.setText("Date");
         holder.DataView_ClassName_Label.setText("Class");
         holder.DataView_Name_Label.setText("Name");
         holder.DataView_Information_Label.setText("Detail");
-        holder.Editbutton.setOnClickListener(new View.OnClickListener() {
+        holder.EditHMButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.d("click","Click");
                 Intent Edit = new Intent(context,EditHomeWork.class);
+
+                Edit.putExtra(Class_MESSAGE,String.valueOf(data[position]));
+                Edit.putExtra(Name_MESSAGE,String.valueOf(data[position]));
+                Edit.putExtra(Date_MESSAGE,String.valueOf(data[position]));
+                Edit.putExtra(Inform_MESSAGE,String.valueOf(data[position]));
                 /*Edit.putExtra()*/
                 context.startActivity(Edit);
+            }
+        });
+        holder.DeleteHMButton.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("LongLogTag")
+            @Override
+            public void onClick(View v) {
+                Log.d("Delete Button click>>>>>>>>>>>>>>>>>>>>>","Delete ButtonClick");
+
+                String DeleteClass = String.valueOf(data[position]);
+
+
+                AlertDialog.Builder Warning = new AlertDialog.Builder(context);
+                Warning.setMessage("Is that you want to Delete"+DeleteClass+" Homework Form the Phone");
+                Warning.setPositiveButton("Delete", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Log.d("Position of the list===================","The position of the string  value is "+position);
+
+
+                    }
+                });
+                Warning.show();
+
             }
         });
     }
@@ -74,7 +112,8 @@ public class HomeworkRecyclerView extends RecyclerView.Adapter<HomeworkRecyclerV
         TextView DataView_Name_Label;
         TextView DataView_Information;
         TextView DataView_Information_Label;
-        Button Editbutton;
+        Button EditHMButton;
+        Button DeleteHMButton;
 
         
         ViewHolder(View itemView)
@@ -88,7 +127,8 @@ public class HomeworkRecyclerView extends RecyclerView.Adapter<HomeworkRecyclerV
             DataView_Name_Label= itemView.findViewById(R.id.HM_Title_Label);
             DataView_Information= itemView.findViewById(R.id.HM_Information);
             DataView_Information_Label= itemView.findViewById(R.id.HM_Information_Label);
-            Editbutton=itemView.findViewById(R.id.EditButton);
+            EditHMButton=itemView.findViewById(R.id.EditButton);
+            DeleteHMButton=itemView.findViewById(R.id.DeleteButton);
         }
 
 

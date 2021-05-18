@@ -21,6 +21,7 @@ public class Homework extends AppCompatActivity {
             new HomeworkList("4/6/2021","CAL","Complex Number","Test"),
             new HomeworkList("5/5/2021","PHY","MACH","Test"),
             new HomeworkList("6/8/2021","PHT","Platelle","Internal"),
+
     };
 
 /*
@@ -43,9 +44,11 @@ public class Homework extends AppCompatActivity {
 
         HomeworkRecyclerView= findViewById(R.id.Homewok_Recycleview);
         HomeworkRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+
+
         adapter = new HomeworkRecyclerView(this,Homework_Information);
         HomeworkRecyclerView.setAdapter(adapter);
-
 
     }
 
@@ -60,11 +63,11 @@ public class Homework extends AppCompatActivity {
         startActivity(New_Homework_Function);
     }
 
-    public void Edit_Homework(View aView) {
+/*    public void Edit_Homework(View aView) {
         Log.d("Edit"," Click");
         Intent Edit_Homework_Function = new Intent(this,EditHomeWork.class);
         startActivity(Edit_Homework_Function);
-    }
+    }*/
 
     public void Return (View aView) {
         finish();

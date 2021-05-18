@@ -1,6 +1,7 @@
 <resources>
     <!--Mainactivity text-->
     <string name="app_name">Gordon_cheng_xin_lo_AS91906</string>
+    <string name="App">School</string>>
     <string name="Timetable_button_name">Timetable</string>
     <string name="Content_share_button_name">Resource</string>
     <string name="Revision_button_name">Revision</string>
@@ -32,11 +33,19 @@
     <string name="Confirm_setting_button_name">Confirm And Save</string>
     <string name="Statement_name">Timetable Setting</string>
     <string name="Return_statement_name">Back to Table</string>
+    <string name="SchoolTimetable_edit">Editing</string>>
+    <string name="SchoolTimetable_StartingTime">Start at</string>>
+    <string name="SchoolTimetable_EndingTime">End in</string>>
+    <string name="SchoolTimetable_Location">Location</string>>
+    <string name="SchoolTimeTable_Name">Name</string>>
+    <string name="SchoolTimeTable_Inform">Detail</string>>
+    <string name="SchoolTimeTable_Date">Day</string>>
+    <string name="SchoolTimetable_Class">Class</string>>
 
     <!--Homework text-->
     <string name="Homework_heading_label">Homework</string>>
     <string name="HM_Name">Name</string>>
-    <string name="HM_Infrom">Information</string>>
+    <string name="HM_Inform">Detail</string>>
     <string name="HM_Class">Class</string>>
     <string name="HM_Date">Date</string>>
     <string name="HM_New">New Homework</string>>
