@@ -1,6 +1,6 @@
 package com.example.gordon_cheng_xin_lo_as91906;
 
-public class HomeworkList {
+public class    HomeworkList {
     public String Data;
     public String ClassName;
     public String Name;

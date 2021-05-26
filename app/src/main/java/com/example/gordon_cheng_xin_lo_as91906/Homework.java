@@ -12,7 +12,7 @@ import android.view.View;
 import java.util.Arrays;
 import java.util.List;
 
-public class Homework extends AppCompatActivity {
+public class  Homework extends AppCompatActivity {
     RecyclerView HomeworkRecyclerView;
     HomeworkRecyclerView adapter;
 
